@@ -19,6 +19,6 @@ const userData=[
 ]
 const server=http.createServer((req , res )=>{
 
-    res.end("hi");
+    res.end(JSON.stringify(userData));
 })
 server.listen(5000);
